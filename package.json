@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start-vinxi": "vinxi start",
+    "start": "npx http-server ./dist"
   },
   "dependencies": {
     "@bufbuild/protobuf": "^1.10.0",
