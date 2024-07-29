@@ -1,0 +1,12 @@
+version: v2
+plugins:
+  - local: protoc-gen-es
+    out: gen
+    opt:
+      # Add more plugin options here
+      - target=ts
+  - local: protoc-gen-connect-es
+    out: gen
+    opt:
+      # Add more plugin options here
+      - target=ts
