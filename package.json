@@ -2,10 +2,9 @@
   "name": "example-with-tailwindcss",
   "type": "module",
   "scripts": {
-    "start": "npx http-server ./dist",
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start-vinxi": "vinxi start"
+    "start": "vinxi start"
   },
   "dependencies": {
     "@bufbuild/protobuf": "^1.10.0",
