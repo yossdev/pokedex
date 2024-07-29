@@ -7,7 +7,7 @@ import {
 } from "@connectrpc/connect-web";
 import { GreetService } from "./pub/gen/greet/v1/greet_connect";
 
-export const getPokemons = cache(async (offset = 0) => {
+export const getPokemons = async (offset = 0) => {
   // "use server";
   try {
     const pokemons = await fetchJson(
@@ -36,7 +36,7 @@ export const getPokemons = cache(async (offset = 0) => {
     console.log(error);
     throw new Error(`Server Error: ${error}`);
   }
-}, "pokemons");
+};
 
 async function fetchJson(url: string) {
   // if (url === "https://pokeapi.co/api/v2/pokemon?offset=0&limit=20") {
